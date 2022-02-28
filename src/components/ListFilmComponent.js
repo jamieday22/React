@@ -48,9 +48,6 @@ class ListFilmComponent extends Component {
                 <tr key={film.film_id}>
                   <td>{film.title}</td>
                   <td>{film.language.name}</td>
-                  {/* <td>
-                    {film.category.length !== 0 ? film.category[0].name : "N/A"}
-                  </td> */}
                   <td>
                     {film.category.length !== 0
                       ? film.category.map((item) => item.name)

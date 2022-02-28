@@ -6,8 +6,9 @@ import FooterComponent from "./components/FooterComponent";
 import ListFilmComponent from "./components/ListFilmComponent";
 import ListCategoryComponent from "./components/ListCategoryComponent";
 import ListLanguageComponent from "./components/ListLanguageComponent";
-import CreateFilmComponent from "./components/CreateFilmComponent";
 import ListReviewComponent from "./components/ListReviewComponent";
+import CreateReviewComponent from "./components/CreateReviewComponent";
+import UpdateReviewComponent from "./components/UpdateReviewComponent";
 
 function App() {
   return (
@@ -24,7 +25,14 @@ function App() {
             ></Route>
             <Route path="/films" component={ListFilmComponent}></Route>
             <Route path="/reviews" component={ListReviewComponent}></Route>
-            <Route path="/add-films" component={CreateFilmComponent}></Route>
+            <Route
+              path="/add-reviews"
+              component={CreateReviewComponent}
+            ></Route>
+            <Route
+              path="/update-review/:review_id"
+              component={UpdateReviewComponent}
+            ></Route>
             <Route path="/languages" component={ListLanguageComponent}></Route>
           </Switch>
         </div>
