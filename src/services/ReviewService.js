@@ -13,6 +13,14 @@ class ReviewService {
   getReviewById(review_id) {
     return axios.get(REVIEW_API_BASE_URL, +"/" + review_id);
   }
+
+  updateReview(review, review_id) {
+    return axios.put(REVIEW_API_BASE_URL + "/" + review_id, review);
+  }
+
+  deleteReview(review_id) {
+    return axios.delete(REVIEW_API_BASE_URL + "/" + review_id);
+  }
 }
 
 export default new ReviewService();

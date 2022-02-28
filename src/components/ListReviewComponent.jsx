@@ -9,6 +9,17 @@ class ListReviewComponent extends Component {
     };
     this.addReview = this.addReview.bind(this);
     this.editReview = this.editReview.bind(this);
+    this.deleteReview = this.deleteReview.bind(this);
+  }
+
+  deleteReview(review_id) {
+    ReviewService.deleteReview(review_id).then((res) => {
+      this.setState({
+        reviews: this.state.reviews.filter(
+          (review) => review.review_id !== review_id
+        ),
+      });
+    });
   }
 
   editReview(review_id) {
@@ -54,6 +65,13 @@ class ListReviewComponent extends Component {
                       className="btn btn-info"
                     >
                       Update
+                    </button>
+                    <button
+                      style={{ marginLeft: "10px" }}
+                      onClick={() => this.deleteReview(review.review_id)}
+                      className="btn btn-danger"
+                    >
+                      Delete
                     </button>
                   </td>
                 </tr>
