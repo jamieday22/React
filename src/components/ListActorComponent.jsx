@@ -23,7 +23,6 @@ class ListActorComponent extends Component {
               <tr>
                 <th>Actor First Name</th>
                 <th>Actor Last Name</th>
-                <th>Actions</th>
               </tr>
             </thead>
 

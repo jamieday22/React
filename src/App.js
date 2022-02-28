@@ -9,6 +9,7 @@ import ListLanguageComponent from "./components/ListLanguageComponent";
 import ListReviewComponent from "./components/ListReviewComponent";
 import CreateReviewComponent from "./components/CreateReviewComponent";
 import UpdateReviewComponent from "./components/UpdateReviewComponent";
+import ListActorComponent from "./components/ListActorComponent";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               component={ListCategoryComponent}
             ></Route>
             <Route path="/films" component={ListFilmComponent}></Route>
+            <Route path="/actors" component={ListActorComponent}></Route>
             <Route path="/reviews" component={ListReviewComponent}></Route>
             <Route
               path="/add-reviews"
