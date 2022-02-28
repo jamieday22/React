@@ -17,16 +17,17 @@ class ListFilmComponent extends Component {
     });
   }
   render() {
-    // console.log(this.state.films[0].category[0]);
-    this.state.films.forEach((film) => {
-      if (film.category.length !== 0) {
-        console.log(film.category[0].name);
-      }
-    });
-    //const a1 = ["Hello", "Cody"];
+    // // console.log(this.state.films[0].category[0]);
+    // this.state.films.forEach((film) => {
+    //   if (film.category.length !== 0) {
+    //     console.log(film.category[0].name);
+    //   }
+    // });
+    // //const a1 = ["Hello", "Cody"];
     return (
       <div>
         <h2 className="text-center">Films List</h2>
+        <div></div>
         <div className="row">
           <table className="table table-striped table-bordered">
             <thead>
@@ -59,7 +60,12 @@ class ListFilmComponent extends Component {
                   <td>{film.rating}</td>
                   <td>{film.release_Year}</td>
                   <td>{film.description}</td>
-                  <td>{film.review}</td>
+                  <td>
+                    {film.reviews.length !== 0
+                      ? film.reviews.map((item) => item.description)
+                      : "N/A"}
+                  </td>
+                  {/* <td>{film.review.description}</td> */}
                 </tr>
               ))}
             </tbody>
