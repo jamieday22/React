@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REVIEW_API_BASE_URL = "http://localhost:8080/api/reviews";
+const REVIEW_API_BASE_URL = "http://44.202.231.42:8080/api/reviews";
 
 class ReviewService {
   getReviews() {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const LANGUAGE_API_BASE_URL = "http://localhost:8080/api/languages";
+const LANGUAGE_API_BASE_URL = "http://44.202.231.42:8080/api/languages";
 
 class LanguageService {
   getLanguages() {
