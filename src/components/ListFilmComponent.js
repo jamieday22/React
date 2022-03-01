@@ -39,7 +39,6 @@ class ListFilmComponent extends Component {
                 <th>Release Year</th>
                 <th>Description</th>
                 <th>Review</th>
-                <th>Actions</th>
               </tr>
             </thead>
 

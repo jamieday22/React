@@ -9,12 +9,12 @@ class HeaderComponent extends Component {
     return (
       <div>
         <header>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-              My Reviewer
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a className="navbar-brand" href="#">
+              <h3> Bad Reviewer </h3>
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#navbarNavAltMarkup"
@@ -22,27 +22,30 @@ class HeaderComponent extends Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
                 <a
-                  class="nav-item nav-link active"
+                  className="nav-item nav-link active"
                   href="http://localhost:3000/reviews"
                 >
                   Reviews
                 </a>
-                <a class="nav-item nav-link" href="http://localhost:3000/films">
+                <a
+                  className="nav-item nav-link"
+                  href="http://localhost:3000/films"
+                >
                   Films
                 </a>
                 <a
-                  class="nav-item nav-link"
+                  className="nav-item nav-link"
                   href="http://localhost:3000/actors"
                 >
                   Actors
                 </a>
                 <a
-                  class="nav-item nav-link"
+                  className="nav-item nav-link"
                   href="http://localhost:3000/categorys"
                 >
                   Categorys
@@ -50,8 +53,12 @@ class HeaderComponent extends Component {
               </div>
             </div>
           </nav>
-          <div class="image.png">
-            <img src="src\banner3.png" />
+          <div>
+            <img
+              src="https://townsquare.media/site/622/files/2011/11/yahooavengersbannerbig.jpg"
+              width="100%"
+              height="200"
+            />
           </div>
         </header>
       </div>
