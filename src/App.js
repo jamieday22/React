@@ -10,8 +10,6 @@ import CreateReviewComponent from "./components/CreateReviewComponent";
 import UpdateReviewComponent from "./components/UpdateReviewComponent";
 import ListActorComponent from "./components/ListActorComponent";
 
-/** @jsx React.DOM */
-
 function App() {
   return (
     <div>
