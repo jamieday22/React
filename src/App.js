@@ -1,3 +1,4 @@
+/** @jsx React.DOM */
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HeaderComponent from "./components/HeaderComponent";
