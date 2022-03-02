@@ -38,6 +38,7 @@ class ListFilmComponent extends Component {
                 <th>Rating</th>
                 <th>Release Year</th>
                 <th>Description</th>
+                <th>Film ID</th>
                 <th>Review</th>
               </tr>
             </thead>
@@ -56,6 +57,7 @@ class ListFilmComponent extends Component {
                   <td>{film.rating}</td>
                   <td>{film.release_Year}</td>
                   <td>{film.description}</td>
+                  <td>{film.film_id}</td>
                   <td>
                     {film.reviews.length !== 0
                       ? film.reviews.map((item) => item.description)
