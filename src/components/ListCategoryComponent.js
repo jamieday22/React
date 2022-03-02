@@ -21,7 +21,7 @@ class ListCategoryComponent extends Component {
           <table className="table table-striped table-bordered">
             <thead>
               <tr>
-                <th>Category Name</th>
+                <th>Category Names</th>
               </tr>
             </thead>
 
