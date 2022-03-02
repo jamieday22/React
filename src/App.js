@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HeaderComponent from "./components/HeaderComponent";
@@ -10,6 +9,8 @@ import ListReviewComponent from "./components/ListReviewComponent";
 import CreateReviewComponent from "./components/CreateReviewComponent";
 import UpdateReviewComponent from "./components/UpdateReviewComponent";
 import ListActorComponent from "./components/ListActorComponent";
+
+/** @jsx React.DOM */
 
 function App() {
   return (
