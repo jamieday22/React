@@ -28,25 +28,25 @@ class HeaderComponent extends Component {
               <div className="navbar-nav">
                 <a
                   className="nav-item nav-link active"
-                  href="http://localhost:3000/reviews"
+                  href="http://3.91.54.143:3000/reviews"
                 >
                   Reviews
                 </a>
                 <a
                   className="nav-item nav-link"
-                  href="http://localhost:3000/films"
+                  href="http://3.91.54.143:3000/films"
                 >
                   Films
                 </a>
                 <a
                   className="nav-item nav-link"
-                  href="http://localhost:3000/actors"
+                  href="http://3.91.54.143:3000/actors"
                 >
                   Actors
                 </a>
                 <a
                   className="nav-item nav-link"
-                  href="http://localhost:3000/categorys"
+                  href="http://3.91.54.143:3000/categorys"
                 >
                   Categorys
                 </a>
